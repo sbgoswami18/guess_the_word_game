@@ -58,7 +58,7 @@ btn.addEventListener("click", function () {
     msg.innerHTML = `Guess the word: "${randWords}"`;
   } else {
     let tempWord = guess.value;
-    if (tempWord === newWords) {
+    if ((tempWord).toLowerCase() === newWords) {
       //   console.log("Correct");
       play = false;
       msg.innerHTML = `Awesome It's Correct. It is "${newWords}".`;
